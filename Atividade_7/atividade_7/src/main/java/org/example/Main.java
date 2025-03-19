@@ -17,18 +17,18 @@ public class Main {
             System.out.println("3 - Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
-            scanner.nextLine(); // Consumir quebra de linha
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:
                     System.out.print("Digite o código do produto: ");
                     int codigo = scanner.nextInt();
-                    scanner.nextLine(); // Consumir quebra de linha
+                    scanner.nextLine();
                     System.out.print("Digite o nome do produto: ");
                     String nome = scanner.nextLine();
                     System.out.print("Digite o preço do produto: ");
                     double preco = scanner.nextDouble();
-                    scanner.nextLine(); // Consumir quebra de linha
+                    scanner.nextLine(); 
 
                     if (produtos.containsKey(codigo)) {
                         System.out.println("Erro: Código já cadastrado!");
@@ -40,7 +40,7 @@ public class Main {
                 case 2:
                     System.out.print("Digite o código do produto para buscar: ");
                     int codigoBusca = scanner.nextInt();
-                    scanner.nextLine(); // Consumir quebra de linha
+                    scanner.nextLine();
 
                     Produto produto = produtos.get(codigoBusca);
                     if (produto != null) {
